@@ -1,10 +1,10 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 8000;
 const path = require('path');
 const loggerMw = require('./middlewares/logger');
-
 const booksRoutes = require('./routes/books');
+
+const app = express();
+const PORT = process.env.PORT || 8000;
 
 // Apply middlewares
 // logger middleware
